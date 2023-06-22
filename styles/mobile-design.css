@@ -1,0 +1,139 @@
+/* Font */
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap");
+
+/* Vars */
+:root {
+  --cl-primary-1: hsl(300, 43%, 22%);
+  --cl-primary-2: hsl(333, 80%, 67%);
+  --cl-neutral-1: hsl(303, 10%, 53%);
+  --cl-neutral-2: hsl(300, 24%, 96%);
+  --cl-neutral-3: hsl(0, 0%, 100%);
+  --ff-ls: "League Spartan", sans-serif;
+}
+
+/* Reset styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
+/* Mobile design */
+
+body {
+  background-image: url("/images/bg-pattern-top-mobile.svg"),
+    url("/images/bg-pattern-bottom-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: top, bottom;
+  background-size: contain;
+}
+
+main {
+  min-height: 100vh;
+  padding: 82px 24px 99px 24px;
+}
+
+.container-section__info h1 {
+  margin: 0 0 calc((20 / 16) * 1rem) 0;
+  font-family: var(--ff-ls);
+  font-weight: 700;
+  font-size: calc((40 / 16) * 1rem);
+  line-height: calc((32 / 16) * 1rem);
+  text-align: center;
+  letter-spacing: calc((-1.42857 / 16) * 1rem);
+  color: var(--cl-primary-1);
+}
+
+.container-section__info p {
+  font-family: var(--ff-ls);
+  font-weight: 500;
+  font-size: calc((19 / 16) * 1rem);
+  line-height: calc((25 / 16) * 1rem);
+  text-align: center;
+  letter-spacing: calc((-0.633333 / 16) * 1rem);
+  color: var(--cl-neutral-1);
+}
+
+.container-section__rated {
+  display: grid;
+  gap: calc((16 / 16) * 1rem);
+  margin: calc((39 / 16) * 1rem) 0 calc((49 / 16) * 1rem) 0;
+}
+
+.container-section__rated > div {
+  min-height: calc((78 / 16) * 1rem);
+  background-color: var(--cl-neutral-2);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: calc((16 / 16) * 1rem);
+  text-align: center;
+  padding: 10px;
+}
+
+.container-section__start {
+  display: flex;
+  gap: calc((8.45 / 16) * 1rem);
+}
+
+.container-section__rated p {
+  font-family: var(--ff-ls);
+  font-weight: 700;
+  font-size: calc((17 / 16) * 1rem);
+  color: var(--cl-primary-1);
+}
+
+.container-section__social {
+  display: grid;
+  gap: calc((16 / 16) * 1rem);
+}
+
+.container-section__social > div {
+  background-color: var(--cl-primary-1);
+  border-radius: 8px;
+  padding: calc((40 / 16) * 1rem) calc((32 / 16) * 1rem) calc((35 / 16) * 1rem)
+    calc((32 / 16) * 1rem);
+}
+
+.container-section__social img {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+}
+
+.container-section__profile {
+  display: flex;
+  gap: calc((23 / 16) * 1rem);
+  margin-bottom: calc((23 / 16) * 1rem);
+}
+
+.container-section__profile + p {
+  font-family: var(--ff-ls);
+  font-weight: 500;
+  font-size: calc((17 / 16) * 1rem);
+  line-height: calc((22 / 16) * 1rem);
+  letter-spacing: calc((-0.303571 / 16) * 1rem);
+  color: var(--cl-neutral-3);
+}
+
+.container-section__buyer p:nth-child(1) {
+  font-family: var(--ff-ls);
+  font-weight: 700;
+  font-size: calc((17 / 16) * 1rem);
+  color: var(--cl-neutral-3);
+}
+
+.container-section__buyer p:nth-child(2) {
+  font-family: var(--ff-ls);
+  font-weight: 400;
+  font-size: calc((17 / 16) * 1rem);
+  color: var(--cl-primary-2);
+}

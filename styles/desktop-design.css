@@ -1,0 +1,40 @@
+/* Desktop design */
+@media (min-width: 1117px) {
+  main {
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .container-section__rated {
+    justify-content: stretch;
+  }
+
+  .container-section__rated > div:nth-child(1) {
+    margin-left: 7px;
+  }
+
+  .container-section__rated > div:nth-child(2) {
+    margin-left: 55px;
+  }
+
+  .container-section__rated > div:nth-child(3) {
+    margin-left: 102px;
+  }
+
+  .container-section__social {
+    min-height: calc((266 / 16) * 1rem);
+    gap: calc((30 / 16) * 1rem);
+  }
+
+  .container-section__social > div {
+    max-height: calc((234 / 16) * 1rem);
+  }
+
+  .container-section__social > div:nth-child(2) {
+    margin-top: 16px;
+  }
+
+  .container-section__social > div:nth-child(3) {
+    margin-top: 32px;
+  }
+}
