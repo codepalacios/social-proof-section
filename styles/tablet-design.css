@@ -1,8 +1,8 @@
 /* Tablet design */
 @media (min-width: 760px) {
   body {
-    background-image: url("/images/bg-pattern-top-desktop.svg"),
-      url("/images/bg-pattern-bottom-desktop.svg");
+    background-image: url("../images/bg-pattern-top-desktop.svg"),
+      url("../images/bg-pattern-bottom-desktop.svg");
     background-position: left top, right bottom;
     background-size: auto;
   }
